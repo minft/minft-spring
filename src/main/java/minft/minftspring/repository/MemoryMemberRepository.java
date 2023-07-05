@@ -1,6 +1,7 @@
 package minft.minftspring.repository;
 
 import minft.minftspring.domain.Member;
+import org.springframework.stereotype.Repository;
 
 import java.util.*;
 
