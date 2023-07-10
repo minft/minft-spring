@@ -1,6 +1,7 @@
 package minft.minftspring;
 
 import minft.minftspring.repository.JdbcMemberRepository;
+import minft.minftspring.repository.JdbcTemplateMemberRepository;
 import minft.minftspring.repository.MemberRepository;
 import minft.minftspring.repository.MemoryMemberRepository;
 import minft.minftspring.service.MemberService;
@@ -27,6 +28,7 @@ public class SpringConfig {
     public MemberRepository memberRepository() {
 
         //return new MemoryMemberRepository();
-        return new JdbcMemberRepository(dataSource);
+        //return new JdbcMemberRepository(dataSource);
+        return new JdbcTemplateMemberRepository(dataSource);
     }
 }
