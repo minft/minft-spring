@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <script  src="http://code.jquery.com/jquery-latest.min.js"></script>
+  <script>
+    $(document).ready(function(){
+       $(document).ready(function(){
+            $(".cooking > img").click(function(){
+                $(this).attr("src", "img/1.jpg");
+                })
+    });
+  </script>
+  <style>
+    .btn{
+      width:100px;
+      height:40px;
+      line-height:40px;
+      background:#2f089b;
+      color:#fff;
+      text-align: center;
+      cursor: pointer;
+      }
+
+  </style>
+</head>
+<body>
+    <div class="btn">파이리</div>
+    <div class="cooking">
+        <img src="img/0.jpg">
+    </div>
+</body>
+</html>
